@@ -1,0 +1,312 @@
+/*Selecteer alle code en haal de standaard margin weg*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    background:#FCFCFC;
+}
+
+body{
+    font-family: 'Helvetica', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.formtest {
+    display: relative;
+     z-index: 1;
+}
+
+.header h1 {
+    color: #2e2e1f;
+    font-size: 2em;
+    display: flex;
+    letter-spacing: 0px;
+    margin: 0;
+    
+}
+
+#wowlogo{
+    
+    width: 70px;
+    margin-top: 10px;
+}
+
+#search-bar{
+    padding: 10px;
+    font-size: 0.7em;
+    font-family: 'Helvetica', sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+}
+
+#search-bar input{
+    width: 100%;
+    height: 100%;
+    padding: 8px 0px 8px 8px;
+    border: none;
+    background-color: #EFEFEF;
+    font-size: larger;
+    color: dimgrey;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.buttons{
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;  
+    margin: 0px 20px;    
+}
+
+
+
+.sort-button{
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    font-size: 0.7em;
+    color: white;
+    padding: 5px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color: #B32091;
+    border: none;
+    border-radius: 15px;
+    margin: 0px 3px;  
+    
+}
+
+.search-icon{
+    
+    position:absolute;
+    width: 20px;
+    margin-top: 17px;
+    margin-left: 30px;
+}
+
+
+.sort-button:active {
+    background-color: #DB31BB;
+}
+
+/*.filter-sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-top: 0px;
+    margin: 0;
+}
+
+.button {
+ 
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    padding: 15px 28px;
+    font-size: 14px;
+    text-align: center;
+    margin: 4px 2px;
+    text-decoration: none;
+    display: inline-block;
+    
+    -webkit-box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.07);
+    -moz-box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.07);
+    box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.07);
+    
+
+}*/
+
+.line{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: lightgrey;
+    opacity: 0.2;
+}
+
+.stories{
+    margin: 20px;
+}
+
+
+.verhaal{
+    padding: 10px;
+    margin: 0px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color:#FFFFFF;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.07);
+    -moz-box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.07);
+    box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.07);
+}
+
+.verhaal:hover {
+    transition: all .3s;
+/*    width: 300px;*/
+/*    background-color: #F9F9F9;*/
+    transform: scale(1.02);
+/*    box-shadow: 10px 10px 22px -6px rgba(225,104,241,0.07);*/
+}
+
+
+
+.verhaal a{
+    display: flex;
+    justify-content:space-between;
+}
+
+.verhaal-wrapper{
+    display: flex;
+}
+
+.verhaal .thumbnail{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    display: inline-block;
+    
+}
+
+
+.verhaal-titel-likes {
+    margin-left: 10px;
+}
+
+.verhaal-likes {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+
+}
+
+.verhaal-likes h3{
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.verhaal h2{
+    color: #2e2e1f;
+    font-size: 1em;
+    margin-bottom: 0px;
+    
+}
+
+.verhaal .hearticon{
+    width: 20px;
+    height: 20px;
+    display: block;   
+    
+}
+
+
+.verhaal h3{
+    color: lightgrey;
+    font-size: 0.8em;
+}
+
+.verhaal .profilepic {
+
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    
+}
+
+.footer {
+    margin: 0 auto;
+    font-size: 10px;
+    padding: 30px;
+    letter-spacing: 0px;
+}
+
+.footer-buttons{
+    display: flex;
+    align-content:space-between;
+    justify-content:center;
+    margin: 20px;
+
+}
+
+.footerlogo{
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+}
+
+.footer-button-home{
+    border-radius: 20px;
+    border: solid;
+    border-width: 2px;
+    border-color: lightgrey;
+    color: lightgrey;
+    margin: 0 auto;
+    padding: 8px 15px;
+    background-color: #FCFCFC;
+}
+
+.footer-button-top{
+    border-radius: 20px;
+    border: solid;
+    border-width: 2px;
+    border-color: lightgrey;
+    color: lightgrey;
+    margin: 0 auto;
+    padding: 8px 15px;
+    background-color: #FCFCFC;
+}
+
+
+.footer-button-home:active{
+    background-color: white;
+
+}
+
+.footer-button-top:active{
+    background-color: white;
+
+}
+
+/*.footer .left_footer {
+    display: inline-block;
+}
+
+.footer .right_footer {
+    display: inline-block;
+    float: right;
+}*/
+
+/*.top {
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    background-color: #B32091;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}*/
