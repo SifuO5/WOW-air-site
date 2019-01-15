@@ -206,10 +206,6 @@ header.show-form {
 @media (min-width: 1200px) {
     .title {
         font-size: 4em;
-        /*        max-width: 1200px;
-    }
-    .title-container {
-        max-width: 90em;*/
     }
 }
 
