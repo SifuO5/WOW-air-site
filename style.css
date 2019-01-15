@@ -1,269 +1,435 @@
 /*Selecteer alle code en haal de standaard margin weg*/
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 html {
-    background:#FCFCFC;
+    background: #FCFCFC;
 }
 
-body{
+body {
     font-family: 'Helvetica', sans-serif;
-}
-
-a{
-    text-decoration: none;
-}
-
-.navigatie{
-    /*position: absolute;*/
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 40px;
-    /*left: 0;
-    right: 0;*/
-
-}
-
-.navigatie a{
-    font-size: 1em;
-    text-decoration: none;
-    color: rgb(179, 32, 145);
-}
-
-
-.navigatie h1{
-    font-size: 1em;
-    color: grey;
-}
-
-.ffkutcontainertje{
-    text-align: center;
-    
-}
-.ffkutcontainertje ul{
-    list-style: none;
-    margin: 20px;
-}
-
-.ffkutcontainertje li{
-    float: left;
-    width: 33.33333%;
+    max-width: 300em;
+    margin: auto;
     
 }
 
-.ffkutcontainertje hr{
-    opacity: 0.2;
+a {
+    text-decoration: none;
 }
 
-#wowlogo{
-    /*position: static;*/
-    width: 70px;
-    margin-top: -25px;
-    /*margin-top: 30px;*/
+img {
+    max-width: 100%;
 }
 
-.search-container{
+
+
+/*HEADER*/
+
+.knop-iconen {
     display: flex;
-    justify-content: space-around;
     align-content: center;
-    
+    justify-content: space-between;
+    margin: 0 auto;
+    width: calc(100% - 40px);
+    max-width: 40em;
 }
 
-#search-bar{
-    width: 100%;
+
+/*desktop viewport*/
+
+@media (min-width: 1200px) {
+    .knop-iconen {
+        max-width: 1200px;
+    }
+}
+
+
+/*ZOEKEN*/
+
+#search-bar {
     padding: 10px;
     font-size: 0.7em;
     font-family: 'Helvetica', sans-serif;
-    margin: 0px 10px;
-    
-    
-        
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
-#search-bar input{
-    width: 100%;
+#search-bar input {
+    margin-left: 55px;
+    width: calc(100% - 55px);
     height: 100%;
-    padding: 8px;
+    padding: 8px 0px 8px 8px;
     border: none;
     background-color: #EFEFEF;
-    font-size: 1.5em;
     color: dimgrey;
     border-radius: 5px;
-    max-width: 600px;
-
 }
 
-.search-input-text{
-    display: block;
-
+.search-icon {
+    position: absolute;
+    width: 20px;
+    margin-top: 17px;
+    margin-left: 30px;
 }
 
-.buttons{
+#zoek-label {
+    padding: 10px;
+    border: none;
+    margin: 0px 10px;
+}
+
+#zoek-label legend {
+    color: #5A5A5A;
+    padding-top: 10px;
+    padding-left: 0px;
+    font-weight: bold;
+    animation-name: noticeMe;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes noticeMe {
+    0% {}
+    25% {
+        color: #B32091;
+    }
+    50% {
+        color: #B32091;
+        margin-left: 20px;
+    }
+    75% {}
+    100% {}
+}
+
+#input-text {
+    color: grey;
+    padding: 5px;
+    margin-right: 5px;
+    width: calc(100% - 37px);
+}
+
+#submit-knop {
+    background-color: rgb(179, 32, 145);
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+
+header {
+    margin-top: -6rem;
+    transition: margin-top 500ms;
+    border: none;
+}
+
+header>form {
+    height: 6rem;
+    background-color: #E6E6E6;
+}
+
+header.show-form {
+    margin-top: 0;
+}
+
+
+/*ipad viewport*/
+
+@media (min-width: 600px) {
+    #zoek-label {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        max-width: 40em;
+    }
+    #submit-knop {
+        padding: 10px;
+    }
+}
+
+
+/*ICONEN*/
+
+#back-button {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+#zoeken {
+    width: 50px;
+    height: 70px;
+}
+
+#my-profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+
+/*TITEL*/
+
+.title-container {
+    margin: 0 auto;
+    padding: 20px 0px;
+    width: calc(100% - 40px);
+    max-width: 40em;
+    margin-top: 20px;
+    color: #363636;
+}
+
+.title {
+    font-size: 2em;
+}
+
+
+/*ipad viewport*/
+
+@media (min-width: 600px) {
+    .title {
+        font-size: 3em;
+        margin: 0 auto;
+    }
+}
+
+
+/*desktop viewport*/
+
+@media (min-width: 1200px) {
+    .title {
+        font-size: 4em;
+        /*        max-width: 1200px;
+    }
+    .title-container {
+        max-width: 90em;*/
+    }
+}
+
+
+/*SORTING BUTOTNS*/
+
+.buttons {
     display: flex;
-    justify-content: space-between;  
-    margin: 10px 20px;    
+    align-content: space-between;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 40em;
+    margin-top: 20px;
 }
 
-
-
-.sort-button{
+.sort-button {
     font-family: 'Helvetica', sans-serif;
     font-weight: bold;
     font-size: 0.7em;
     color: white;
     padding: 5px;
-    padding-left:10px;
-    padding-right:10px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: #B32091;
     border: none;
     border-radius: 15px;
-    margin: 0px 3px;  
-    
 }
-
-.search-icon{
-    width: 20px;
-    height: 20px;
-    margin-top: 17px;
-    margin-left: 30px;
-}
-
 
 .sort-button:active {
     background-color: #DB31BB;
 }
 
-/*.filter-sort {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    padding-top: 0px;
-    margin: 0;
+
+/*ipad viewport*/
+
+@media (min-width: 600px) {
+    .sort-button {
+        font-size: 1em;
+    }
 }
 
-.button {
- 
-    padding: 20px;
-    background-color: #FFFFFF;
-    border: none;
-    border-radius: 10px;
-    color: black;
-    padding: 15px 28px;
-    font-size: 14px;
-    text-align: center;
-    margin: 4px 2px;
-    text-decoration: none;
-    display: inline-block;
-    
-    -webkit-box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.07);
-    -moz-box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.07);
-    box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.07);
-    
 
-}*/
+/*desktop viewport*/
 
-.line{
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
+@media (min-width: 1200px) {
+    .sort-button {
+        font-size: 1em;
+    }
+}
+
+.line {
     color: lightgrey;
     opacity: 0.2;
+    margin: 0 auto;
+    width: calc(100% - 40px);
+    max-width: 40em;
+    margin-top: 20px;
 }
 
-.stories{
-    margin: 20px;
+
+/*STORIES*/
+
+.stories {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: calc(100% - 40px);
+    max-width: 40em;
 }
 
-
-.verhaal{
+.verhaal {
     padding: 10px;
-    margin: 0px;
     margin-bottom: 20px;
     list-style: none;
-    background-color:#FFFFFF;
+    background-color: #FFFFFF;
     border-radius: 10px;
-    -webkit-box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.07);
-    -moz-box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.07);
-    box-shadow: 10px 10px 22px -6px rgba(0,0,0,0.07);
+    -webkit-box-shadow: 10px 10px 22px -6px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 10px 10px 22px -6px rgba(0, 0, 0, 0.07);
+    box-shadow: 10px 10px 22px -6px rgba(0, 0, 0, 0.07);
+    max-width: 40em;
+    padding-bottom: 70px;
+}
+
+.verhaal-beschrijving {
+    float: none;
+    display: block;
+    position: absolute;
+    max-width: 80%;
+    margin-top: 60px;
+    color: #ACACAC;
+    font-size: 0.8em;
 }
 
 .verhaal:hover {
     transition: all .3s;
-/*    width: 300px;*/
-/*    background-color: #F9F9F9;*/
     transform: scale(1.02);
-/*    box-shadow: 10px 10px 22px -6px rgba(225,104,241,0.07);*/
 }
 
-
-
-.verhaal a{
+.verhaal a {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-.verhaal-wrapper{
+.verhaal-wrapper {
     display: flex;
 }
 
-.verhaal .thumbnail{
+.verhaal .thumbnail {
     width: 50px;
     height: 50px;
     border-radius: 5px;
     display: inline-block;
-    
 }
 
-
 .verhaal-titel-likes {
-    margin-left: 10px;
+    margin-left: 60px;
 }
 
 .verhaal-likes {
     display: flex;
     align-items: center;
     margin-top: 5px;
-
 }
 
-.verhaal-likes h3{
+.verhaal-likes h4 {
     margin-left: 10px;
     margin-top: 0px;
+    color: #D3D3D3;
 }
 
-.verhaal h2{
+.verhaal h2 {
     color: #2e2e1f;
     font-size: 1em;
     margin-bottom: 0px;
-    
 }
 
-.verhaal .hearticon{
+.verhaal .hearticon {
     width: 20px;
     height: 20px;
-    display: block;   
-    
+    display: block;
 }
 
-
-.verhaal h3{
+.verhaal h4 {
     color: lightgrey;
     font-size: 0.8em;
 }
 
-.verhaal .profilepic {
-
+.verhaal .download-button {
     border-radius: 100px;
     width: 50px;
     height: 50px;
-    
 }
+
+.verhaal-nummer {
+    font-size: 2em;
+    position: absolute;
+    margin-left: 62px;
+    margin-top: 6px;
+    color: #363636;
+    font-weight: 600;
+}
+
+
+/*ipad viewport*/
+
+@media (min-width: 600px) {
+    .verhaal {
+        padding: 20px;
+        padding-bottom: 60px;
+    }
+    .verhaal-beschrijving {
+        max-width: 580px;
+        font-size: 1em;
+        font-weight: 100;
+    }
+
+}
+
+
+/*desktop viewport*/
+
+@media (min-width: 1200px) {
+    .verhaal {
+        padding: 30px;
+        padding-bottom: 70px;
+    }
+    .verhaal-beschrijving {
+        padding-top: 20px;
+        max-width: 580px;
+    }
+    .verhaal .thumbnail {
+        width: 70px;
+        height: 70px;
+    }
+    .verhaal h2 {
+        font-size: 1.5em;
+        margin-left: 10px;
+    }
+    .verhaal h4 {
+        font-size: 1em;
+    }
+    .verhaal .download-button {
+        border-radius: 100px;
+        width: 70px;
+        height: 70px;
+    }
+    .verhaal-likes {
+        margin: 10px 10px;
+    }
+        .verhaal-nummer {
+        margin-left: 90px;
+        margin-top: 6px;
+        font-size: 3em;
+    }
+        .verhaal-titel-likes {
+        margin-left: 80px;
+    }
+}
+
+
+/*FOOTER*/
 
 .footer {
     margin: 0 auto;
@@ -272,22 +438,21 @@ a{
     letter-spacing: 0px;
 }
 
-.footer-buttons{
+.footer-buttons {
     display: flex;
-    align-content:space-between;
-    justify-content:center;
+    align-content: space-between;
+    justify-content: center;
     margin: 20px;
-
 }
 
-.footerlogo{
+.footerlogo {
     width: 200px;
     margin: 0 auto;
     display: block;
     margin-top: 50px;
 }
 
-.footer-button-home{
+.footer-button-home {
     border-radius: 20px;
     border: solid;
     border-width: 2px;
@@ -298,7 +463,7 @@ a{
     background-color: #FCFCFC;
 }
 
-.footer-button-top{
+.footer-button-top {
     border-radius: 20px;
     border: solid;
     border-width: 2px;
@@ -309,37 +474,20 @@ a{
     background-color: #FCFCFC;
 }
 
-
-.footer-button-home:active{
+.footer-button-home:active {
     background-color: white;
-
 }
 
-.footer-button-top:active{
+.footer-button-top:active {
     background-color: white;
-
 }
 
-/*.footer .left_footer {
-    display: inline-block;
+/*ipad viewport*/
+
+@media (min-width: 600px) {
+    .footer-buttons {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
 }
-
-.footer .right_footer {
-    display: inline-block;
-    float: right;
-}*/
-
-/*.top {
-    display: inline-block;
-    color: white;
-    padding: 10px;
-    background-color: #B32091;
-    border: none;
-    font-weight: bold;
-    border-radius: 5px;
-    font-size: 18px;
-    margin-top: -10px;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    text-decoration: none;
-}*/
