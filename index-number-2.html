@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -9,21 +9,22 @@
 
 <body>
 
+    <!--Zoekveld en ronde knoppen-->
 
-    <header id="header">
+    <header>
 
         <form action="#">
             <fieldset id="zoek-label">
-                <legend>Find something to read</legend>
+                <legend>Vind iets om te lezen</legend>
                 <input type="text" id="input-text">
-                <input type="submit" name="button" value="Go" id="submit-knop">
+                <input type="submit" name="button" value="Gaan" id="submit-knop">
             </fieldset>
         </form>
 
 
         <div class="knop-iconen">
 
-            <a href="home.html"><img src="img/back-button.png" alt="Back" id="back-button"></a>
+            <a href="home-2.html"><img src="img/back-button.png" alt="Back" id="back-button"></a>
             <input type="image" src="img/search-icon.png" alt="search" id="zoeken" />
             <img src="img/myprofile.jpg" alt="profilepic" id="my-profile">
 
@@ -33,40 +34,42 @@
     <main>
 
         <header class="title-container">
-            <h1 class="title">Trending</h1>
+            <h1 class="title">Populair</h1>
 
             <div class="buttons">
-                <a href="index-number.html" class="sort-button">Number</a>
+
                 <!--Zouden buttons moeten zijn-->
-                <a href=index.html class="sort-button">Most likes</a>
-                <a href=# class="sort-button">Viewed</a>
-                <a href=# class="sort-button">Unviewed</a>
+                <a href="index.html" class="sort-button">Likes</a>
+                <a href="index-number.html" class="sort-button">Nummer</a>
+                <a href=# class="sort-button">Gezien</a>
+                <a href=# class="sort-button">Opgeslagen</a>
             </div>
         </header>
 
-        <hr class="line">
 
+
+        <!--Verhalen lijst-->
 
         <div class="stories">
+
 
 
             <article class='verhaal'>
                 <a href=verhaal/verhaal.html>
                     <div class="verhaal-wrapper">
 
-                        <img src="img/thumbnail4.jpg" alt="thumbnail1" class='thumbnail'>
+                        <img src="img/thumbnail4.jpg" alt="thumbnail14" class='thumbnail'>
                         <p class="verhaal-nummer">90</p>
                         <div class="verhaal-titel-likes">
                             <h2>Telegrafisch</h2>
                             <div class="verhaal-likes">
                                 <img src="img/hearicon.png" alt="hearticon" class="hearticon">
-                                <h4>1890</h4>
+                                <p class="likes-nummer">1890</p>
                             </div>
                         </div>
                     </div>
 
-                    <h3 class="verhaal-beschrijving">BUS STOPT STOP NAAR BIBLIOTHEEK VOOR STIJLOEFENINGEN STOP VAN RAYMOND QUENEAU STOP REGEN EN WIND... </h3>
-
+                    <p class="verhaal-beschrijving">BUS STOPT STOP NAAR BIBLIOTHEEK VOOR STIJLOEFENINGEN STOP VAN RAYMOND QUENEAU STOP REGEN EN WIND... </p>
 
 
                     <img src="img/download-grey.svg" alt="download" class="download-button">
@@ -75,50 +78,54 @@
             </article>
 
 
+           
             <article class='verhaal'>
-                <a href="verhaal%20site.html">
+                <a href=#>
                     <div class="verhaal-wrapper">
 
-                        <img src="img/thumbnail5.jpg" alt="thumbnail1" class='thumbnail'>
+                        <img src="img/thumbnail5.jpg" alt="thumbnail5" class='thumbnail'>
                         <p class="verhaal-nummer">87</p>
                         <div class="verhaal-titel-likes">
                             <h2>Code</h2>
                             <div class="verhaal-likes">
                                 <img src="img/hearicon.png" alt="hearticon" class="hearticon">
-                                <h4>1576</h4>
+                                <p class="likes-nummer">1576</p>
                             </div>
                         </div>
                     </div>
 
-                    <h3 class="verhaal-beschrijving">Kraak de code en win een romantisch etentje met de verwarde man. In kwellende situaties toveren apen pennenvruchten uit...</h3>
+                    <p class="verhaal-beschrijving">Kraak de code en win een romantisch etentje met de verwarde man. In kwellende situaties toveren apen pennenvruchten uit...</p>
 
                     <img src="img/download-grey.svg" alt="download" class="download-button">
                 </a>
             </article>
 
 
+           
             <article class='verhaal'>
-                <a href="verhaal%20site.html">
+                <a href=#>
                     <div class="verhaal-wrapper">
 
                         <img src="img/thumbnail3.jpg" alt="thumbnail3" class='thumbnail'>
                         <p class="verhaal-nummer">66</p>
                         <div class="verhaal-titel-likes">
-                            <h2>Dialoog</h2>
+                            <h2>Kamervragen van Richard de Mos</h2>
+                            <!--Dialoog-->
                             <div class="verhaal-likes">
                                 <img src="img/hearicon.png" alt="hearticon" class="hearticon">
-                                <h4>1606</h4>
+                                <p class="likes-nummer">1606</p>
                             </div>
                         </div>
                     </div>
 
-                    <h3 class="verhaal-beschrijving">- Wat zoek je? – Hoe bedoel je: wat zoek je? – Nou gewoon, hoe ik het zeg: wat zoek je? Zo’n moeilijke vraag is dat toch niet?...</h3>
-
+                    <p class="verhaal-beschrijving">- Wat zoek je? – Hoe bedoel je: wat zoek je? – Nou gewoon, hoe ik het zeg: wat zoek je? Zo’n moeilijke vraag is dat toch niet?...</p>
 
                     <img src="img/download-grey.svg" alt="download" class="download-button">
                 </a>
             </article>
 
+          
+           
             <article class='verhaal'>
 
                 <a href="index-saved.html">
@@ -131,27 +138,21 @@
                             <h2> Paranoia</h2>
                             <div class="verhaal-likes">
                                 <img src="img/hearicon.png" alt="hearticon" class="hearticon">
-                                <h4>2036</h4>
+                                <p class="likes-nummer">2036</p>
                             </div>
                         </div>
                     </div>
 
-                    <h3 class="verhaal-beschrijving">Ik sluip de bus uit. Kop in de kraag. Ik maak me klein en duw m’n zoon vooruit. Hij slaapt. Eindelijk. Zijn gejengel trok veel te veel...</h3>
+                    <p class="verhaal-beschrijving">Ik sluip de bus uit. Kop in de kraag. Ik maak me klein en duw m’n zoon vooruit. Hij slaapt. Eindelijk. Zijn gejengel trok veel te veel...</p>
 
                     <img src="img/download-grey.svg" alt="download" class="download-button">
                 </a>
             </article>
 
 
-
-
-
-
-
-
-
+           
             <article class='verhaal'>
-                <a href="verhaal%20site.html">
+                <a href=#>
                     <div class="verhaal-wrapper">
 
                         <img src="img/thumbnail6.jpg" alt="thumbnail6" class='thumbnail'>
@@ -160,19 +161,21 @@
                             <h2>Ongeluk</h2>
                             <div class="verhaal-likes">
                                 <img src="img/hearicon.png" alt="hearticon" class="hearticon">
-                                <h4>1536</h4>
+                                <p class="likes-nummer">1536</p>
                             </div>
                         </div>
                     </div>
 
-                    <h3 class="verhaal-beschrijving">Voor het Centraal Station stap ik lijn 13 uit midden in een plas die zo diep is dat mijn hele schoen erin verdwijnt. Mijn zoontje, waarvan...</h3>
+                    <p class="verhaal-beschrijving">Voor het Centraal Station stap ik lijn 13 uit midden in een plas die zo diep is dat mijn hele schoen erin verdwijnt. Mijn zoontje, waarvan...</p>
 
                     <img src="img/download-grey.svg" alt="download" class="download-button">
                 </a>
             </article>
 
+           
+           
             <article class='verhaal'>
-                <a href="verhaal%20site.html">
+                <a href=#>
                     <div class="verhaal-wrapper">
 
                         <img src="img/thumbnail7.jpg" alt="thumbnail7" class='thumbnail'>
@@ -181,41 +184,32 @@
                             <h2>Schoorsteen</h2>
                             <div class="verhaal-likes">
                                 <img src="img/hearicon.png" alt="hearticon" class="hearticon">
-                                <h4>1496</h4>
+                                <p class="likes-nummer">1496</p>
                             </div>
                         </div>
                     </div>
 
-                    <h3 class="verhaal-beschrijving">Ik stap de schoorsteen uit. Mijn schoorsteen is net in slaap gevallen. Ik ben op weg naar de Openbare Schoorsteen, in de hoop dat ze...</h3>
+                    <p class="verhaal-beschrijving">Ik stap de schoorsteen uit. Mijn schoorsteen is net in slaap gevallen. Ik ben op weg naar de Openbare Schoorsteen, in de hoop dat ze...</p>
 
                     <img src="img/download-grey.svg" alt="download" class="download-button">
                 </a>
             </article>
-
-
-
-
-
-
-
-
-
+            
 
         </div>
 
 
 
-        <footer class='footer'>
+        <footer>
             <div class="footer-buttons">
                 <button class="footer-button-home">Home</button>
                 <button class="footer-button-top">Top</button>
             </div>
             <img src="img/footerlogo.png" alt="footerlogo" class='footerlogo'>
         </footer>
-
-        <script src="script.js"></script>
-
     </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

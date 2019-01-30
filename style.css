@@ -14,7 +14,6 @@ body {
     font-family: 'Helvetica', sans-serif;
     max-width: 300em;
     margin: auto;
-    
 }
 
 a {
@@ -26,7 +25,6 @@ img {
 }
 
 
-
 /*HEADER*/
 
 .knop-iconen {
@@ -34,7 +32,7 @@ img {
     align-content: center;
     justify-content: space-between;
     margin: 0 auto;
-    width: calc(100% - 40px);
+    width: calc(100% - 3em);
     max-width: 40em;
 }
 
@@ -50,26 +48,6 @@ img {
 
 /*ZOEKEN*/
 
-#search-bar {
-    padding: 10px;
-    font-size: 0.7em;
-    font-family: 'Helvetica', sans-serif;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-#search-bar input {
-    margin-left: 55px;
-    width: calc(100% - 55px);
-    height: 100%;
-    padding: 8px 0px 8px 8px;
-    border: none;
-    background-color: #EFEFEF;
-    color: dimgrey;
-    border-radius: 5px;
-}
-
 .search-icon {
     position: absolute;
     width: 20px;
@@ -78,15 +56,14 @@ img {
 }
 
 #zoek-label {
-    padding: 10px;
     border: none;
-    margin: 0px 10px;
+    margin: 0em 1.5em;
+    padding-top: 0.5em;
 }
 
 #zoek-label legend {
     color: #5A5A5A;
-    padding-top: 10px;
-    padding-left: 0px;
+    padding-top: 1em;
     font-weight: bold;
     animation-name: noticeMe;
     animation-duration: 6s;
@@ -101,7 +78,7 @@ img {
     }
     50% {
         color: #B32091;
-        margin-left: 20px;
+        margin-left: 1em;
     }
     75% {}
     100% {}
@@ -109,14 +86,14 @@ img {
 
 #input-text {
     color: grey;
-    padding: 5px;
-    margin-right: 5px;
-    width: calc(100% - 37px);
+    padding: 0.5em;
+    margin-right: 1.2em;
+    width: calc(100% - 5em);
 }
 
 #submit-knop {
     background-color: rgb(179, 32, 145);
-    padding: 5px;
+    padding: 0.5em;
     cursor: pointer;
     border: none;
     font-weight: bold;
@@ -149,7 +126,7 @@ header.show-form {
         max-width: 40em;
     }
     #submit-knop {
-        padding: 10px;
+        padding: 1em;
     }
 }
 
@@ -157,21 +134,19 @@ header.show-form {
 /*ICONEN*/
 
 #back-button {
-    width: 50px;
-    height: 50px;
-    margin-top: 20px;
+    width: 3em;
+    margin-top: 1.3em;
 }
 
 #zoeken {
-    width: 50px;
-    height: 70px;
+    width: 4em;
 }
 
 #my-profile {
-    width: 50px;
-    height: 50px;
-    border-radius: 40px;
-    margin-top: 20px;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    margin-top: 1.3em;
 }
 
 
@@ -180,9 +155,9 @@ header.show-form {
 .title-container {
     margin: 0 auto;
     padding: 20px 0px;
-    width: calc(100% - 40px);
+    width: calc(100% - 3em);
     max-width: 40em;
-    margin-top: 20px;
+    margin-top: 3em;
     color: #363636;
 }
 
@@ -219,19 +194,19 @@ header.show-form {
     margin: 0 auto;
     max-width: 40em;
     margin-top: 20px;
+    border-bottom: solid 1px lightgrey;
+    padding-bottom: 2em;
 }
 
 .sort-button {
     font-family: 'Helvetica', sans-serif;
     font-weight: bold;
-    font-size: 0.7em;
+    font-size: 0.8em;
     color: white;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 1em;
     background-color: #B32091;
     border: none;
-    border-radius: 15px;
+    border-radius: 10em;
 }
 
 .sort-button:active {
@@ -256,28 +231,19 @@ header.show-form {
     }
 }
 
-.line {
-    color: lightgrey;
-    opacity: 0.2;
-    margin: 0 auto;
-    width: calc(100% - 40px);
-    max-width: 40em;
-    margin-top: 20px;
-}
-
 
 /*STORIES*/
 
 .stories {
     margin: 0 auto;
-    margin-top: 20px;
-    width: calc(100% - 40px);
+    margin-top: 1em;
+    width: calc(100% - 3em);
     max-width: 40em;
 }
 
 .verhaal {
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 1em;
+    margin-bottom: 2em;
     list-style: none;
     background-color: #FFFFFF;
     border-radius: 10px;
@@ -293,7 +259,7 @@ header.show-form {
     display: block;
     position: absolute;
     max-width: 80%;
-    margin-top: 60px;
+    margin-top: 4.7em;
     color: #ACACAC;
     font-size: 0.8em;
 }
@@ -313,56 +279,50 @@ header.show-form {
 }
 
 .verhaal .thumbnail {
-    width: 50px;
-    height: 50px;
+    width: 3em;
+    height: 3em;
     border-radius: 5px;
     display: inline-block;
 }
 
 .verhaal-titel-likes {
-    margin-left: 60px;
+    margin-left: 3.7em;
 }
 
 .verhaal-likes {
     display: flex;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 0.3em;
 }
 
-.verhaal-likes h4 {
-    margin-left: 10px;
-    margin-top: 0px;
+.likes-nummer {
+    margin-left: 0.5em;
     color: #D3D3D3;
+    font-size: 0.8em;
+    font-weight: 800;
 }
 
 .verhaal h2 {
     color: #2e2e1f;
     font-size: 1em;
-    margin-bottom: 0px;
 }
 
 .verhaal .hearticon {
-    width: 20px;
-    height: 20px;
+    width: 1.4em;
     display: block;
 }
 
-.verhaal h4 {
-    color: lightgrey;
-    font-size: 0.8em;
-}
-
 .verhaal .download-button {
-    border-radius: 100px;
-    width: 50px;
-    height: 50px;
+    border-radius: 100%;
+    width: 3em;
+
 }
 
 .verhaal-nummer {
     font-size: 2em;
     position: absolute;
-    margin-left: 62px;
-    margin-top: 6px;
+    margin-left: 1.9em;
+    margin-top: 0.1em;
     color: #363636;
     font-weight: 600;
 }
@@ -372,15 +332,14 @@ header.show-form {
 
 @media (min-width: 600px) {
     .verhaal {
-        padding: 20px;
-        padding-bottom: 60px;
+        padding: 1em;
+        padding-bottom: 5em;
     }
     .verhaal-beschrijving {
-        max-width: 580px;
+        max-width: 37em;
         font-size: 1em;
         font-weight: 100;
     }
-
 }
 
 
@@ -388,49 +347,45 @@ header.show-form {
 
 @media (min-width: 1200px) {
     .verhaal {
-        padding: 30px;
-        padding-bottom: 70px;
+        padding: 1em;
+        padding-bottom: 5em;;
     }
     .verhaal-beschrijving {
-        padding-top: 20px;
-        max-width: 580px;
+        padding-top: 1em;
+        max-width: 38em;
     }
     .verhaal .thumbnail {
-        width: 70px;
-        height: 70px;
+        width: 4em;
+        height: 4em;
     }
     .verhaal h2 {
-        font-size: 1.5em;
-        margin-left: 10px;
+        font-size: 1.4em;
     }
     .verhaal h4 {
         font-size: 1em;
     }
     .verhaal .download-button {
-        border-radius: 100px;
-        width: 70px;
-        height: 70px;
+        width: 4em;
     }
     .verhaal-likes {
-        margin: 10px 10px;
+        font-size: 1.3em;
     }
-        .verhaal-nummer {
-        margin-left: 90px;
-        margin-top: 6px;
+    .verhaal-nummer {
+        margin-left: 1.7em;
+        margin-top: 0.1em;
         font-size: 3em;
     }
-        .verhaal-titel-likes {
-        margin-left: 80px;
+    .verhaal-titel-likes {
+        margin-left: 5.5em;
     }
 }
 
 
 /*FOOTER*/
 
-.footer {
+footer {
     margin: 0 auto;
-    font-size: 10px;
-    padding: 30px;
+    padding: 2em;
     letter-spacing: 0px;
 }
 
@@ -439,6 +394,7 @@ header.show-form {
     align-content: space-between;
     justify-content: center;
     margin: 20px;
+    
 }
 
 .footerlogo {
@@ -449,25 +405,27 @@ header.show-form {
 }
 
 .footer-button-home {
-    border-radius: 20px;
+    border-radius: 2em;
     border: solid;
     border-width: 2px;
-    border-color: lightgrey;
-    color: lightgrey;
+    border-color: #D3D3D3;
+    color: #D3D3D3;
     margin: 0 auto;
     padding: 8px 15px;
     background-color: #FCFCFC;
+    font-weight: 800;
 }
 
 .footer-button-top {
-    border-radius: 20px;
+    border-radius: 2em;
     border: solid;
     border-width: 2px;
-    border-color: lightgrey;
-    color: lightgrey;
+    border-color: #D3D3D3;
+    color: #D3D3D3;
     margin: 0 auto;
-    padding: 8px 15px;
+    padding: 0.5em 1em;
     background-color: #FCFCFC;
+    font-weight: 800;
 }
 
 .footer-button-home:active {
@@ -478,12 +436,12 @@ header.show-form {
     background-color: white;
 }
 
+
 /*ipad viewport*/
 
 @media (min-width: 600px) {
     .footer-buttons {
-        max-width: 600px;
+        max-width: 30em;
         margin: 0 auto;
     }
-
 }
