@@ -15,11 +15,11 @@ The user can read these stories to entertain themselfs or to get exited about tr
 
 Files:
 
-home.html - Homepage with categories to choose from
-index.html - Page with various stories to be read by the user
-index-number - Same as the page above but content is sorted by number
-index-number - Same as the page above but content is sorted by number in reverse order
-index-saved - Same as index.html but with a saved story icon
+index.html - Homepage with categories to choose from
+overzicht.html - Page with various stories to be read by the user
+overzicht-number - Same as the page above but content is sorted by number
+overzicht-number-2 - Same as the page above but content is sorted by number in reverse order
+overzicht-saved - Same as index.html but with a saved story icon
 style.css - Stylesheet for the design of the pages
 script.js - Javascript file with a few functions
 

@@ -43,27 +43,11 @@ header {
 }
 
 
-/*ipad viewport*/
-
-@media (min-width: 600px) {
-    .knop-iconen {
-        width: calc(100% - 3em);
-        max-width: 40em;
-        
-    }
-    header {
-       
-    }
-}
 
 
 /*desktop viewport*/
 
 @media (min-width: 1200px) {
-    .knop-iconen {
-        max-width: 100%;
-        width: 100%;
-    }
     header {
         max-width: 1200px;
     }
@@ -109,7 +93,7 @@ header {
         font-size: 3em;
         margin: 0 auto;
         padding-top: 10%;
-        width: calc(100% - 1em);
+        width: calc(100% - 3rem);
     }
 }
 
@@ -264,16 +248,14 @@ img:hover {
         margin: auto;
     }
     h2 {
-        
         margin: 0 auto;
         max-width: 24em;
         margin-top: 1em;
     }
-    
     h1 {
         max-width: 40em;
     }
-    img {
+    .afbeeldingen img {
         margin-right: 1em;
     }
     .kruis {
@@ -300,3 +282,5 @@ img:hover {
         width: 40em;
     }
 }
+    
+    

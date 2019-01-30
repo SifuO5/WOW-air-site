@@ -170,7 +170,7 @@ header.show-form {
 
 @media (min-width: 600px) {
     .title {
-        font-size: 3em;
+        font-size: 5vw;
         margin: 0 auto;
     }
 }
@@ -404,7 +404,8 @@ footer {
     margin-top: 50px;
 }
 
-.footer-button-home {
+
+footer a {
     border-radius: 2em;
     border: solid;
     border-width: 2px;
@@ -413,7 +414,7 @@ footer {
     margin: 0 auto;
     padding: 8px 15px;
     background-color: #FCFCFC;
-    font-weight: 800;
+    font-weight: 100;
 }
 
 .footer-button-top {
@@ -425,7 +426,7 @@ footer {
     margin: 0 auto;
     padding: 0.5em 1em;
     background-color: #FCFCFC;
-    font-weight: 800;
+    font-weight: 100;
 }
 
 .footer-button-home:active {
