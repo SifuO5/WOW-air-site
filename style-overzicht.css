@@ -86,18 +86,25 @@ img {
 
 #input-text {
     color: grey;
-    padding: 0.5em;
+    padding: 0.8em;
     margin-right: 1.2em;
-    width: calc(100% - 5em);
+    width: calc(100% - 6.1em);
+    max-width: 35em;
+    border-radius: 0.5em;
+    border: none;
+    margin-top: 1em;
+    font-size: 1em;
 }
 
 #submit-knop {
     background-color: rgb(179, 32, 145);
-    padding: 0.5em;
+    padding: 1em;
     cursor: pointer;
     border: none;
     font-weight: bold;
     color: white;
+    border-radius: 0.5em;
+    margin-top: 1em;
 }
 
 header {
@@ -123,10 +130,7 @@ header.show-form {
         margin: 0 auto;
         display: flex;
         justify-content: center;
-        max-width: 40em;
-    }
-    #submit-knop {
-        padding: 1em;
+        width: calc(100% - 3em);
     }
 }
 
@@ -154,24 +158,26 @@ header.show-form {
 
 .title-container {
     margin: 0 auto;
-    padding: 20px 0px;
     width: calc(100% - 3em);
     max-width: 40em;
-    margin-top: 3em;
     color: #363636;
 }
 
-.title {
-    font-size: 2em;
+header h1 {
+    font-size: 9vw;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 
 /*ipad viewport*/
 
 @media (min-width: 600px) {
-    .title {
-        font-size: 5vw;
+    header h1 {
+        font-size: 6vw;
         margin: 0 auto;
+        padding-top: 10%;
+        padding-bottom: 5%;
     }
 }
 
@@ -179,7 +185,7 @@ header.show-form {
 /*desktop viewport*/
 
 @media (min-width: 1200px) {
-    .title {
+    header h1 {
         font-size: 4em;
     }
 }
@@ -246,7 +252,7 @@ header.show-form {
     margin-bottom: 2em;
     list-style: none;
     background-color: #FFFFFF;
-    border-radius: 10px;
+    border-radius: 0.5em;
     -webkit-box-shadow: 10px 10px 22px -6px rgba(0, 0, 0, 0.07);
     -moz-box-shadow: 10px 10px 22px -6px rgba(0, 0, 0, 0.07);
     box-shadow: 10px 10px 22px -6px rgba(0, 0, 0, 0.07);

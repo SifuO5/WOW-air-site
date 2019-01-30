@@ -1,6 +1,6 @@
-/*Selecteer alle code en haal de standaard margin weg*/
-
-* {
+    /*Selecteer alle code en haal de standaard margin weg*/
+    
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -26,12 +26,12 @@ a {
     padding-bottom: 2em;
 }
 
-
 /*HEADER*/
 
 header {
     max-width: 40em;
     margin: auto;
+    width: calc(100% - 3em);
 }
 
 .knop-iconen {
@@ -39,25 +39,23 @@ header {
     align-content: center;
     justify-content: space-between;
     margin: 0 auto;
-    width: calc(100% - 3em);
 }
-
-
-
-
 /*desktop viewport*/
 
 @media (min-width: 1200px) {
     header {
         max-width: 1200px;
     }
+    .knop-iconen {
+        width: 100%;
+    }
 }
 
 #my-profile {
-    width: 50px;
-    height: 50px;
-    border-radius: 40px;
-    margin-top: 20px;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    margin-top: 1.3em;
 }
 
 #wow-logo {
@@ -73,65 +71,53 @@ header {
     border-radius: 40px;
     margin-top: 20px;
 }
-
-
 /*TITEL*/
 
-#title {
-    font-size: 2em;
-    margin: 1em;
-    padding: 20px 0px;
-    margin-top: 5%;
+header h1 {
+    font-size: 9vw;
+    margin-top: 1em;
     color: #363636;
+    margin-bottom: 1em;
 }
-
-
 /*ipad viewport*/
 
 @media (min-width: 600px) {
-    #title {
-        font-size: 3em;
+    header h1 {
+        font-size: 6vw;
         margin: 0 auto;
         padding-top: 10%;
-        width: calc(100% - 3rem);
+        padding-bottom: 5%;
     }
 }
-
-
 /*desktop viewport*/
 
 @media (min-width: 1200px) {
-    #title {
+    header h1 {
         font-size: 4em;
         margin-bottom: 1em;
     }
 }
-
-
 /*sorteren*/
 
 #categorie-zoeken {
-    margin: 2em;
+    margin: 0 auto;
     font-size: 1em;
     font-weight: 600;
+    width: calc(100% - 3rem);
 }
 
 #categorie-zoeken label {
     display: block;
 }
-
-
-
 /*ipad*/
 
 @media (min-width: 600px) {
     #categorie-zoeken {
         width: calc(100% - 4em);
         margin: 0 auto;
-        max-width: 36em;
+        max-width: 40em;
     }
 }
-
 /*desktop*/
 
 @media (min-width: 1200px) {
@@ -139,9 +125,6 @@ header {
         max-width: 1150px;
     }
 }
-
-
-
 
 #categorie-zoeken select {
     margin-top: 1em;
@@ -176,7 +159,7 @@ header {
     font-size: 1em;
     border: none;
     border-radius: 4em;
-    background-color: #991682;
+    background-color: #B32091;
     color: #FFF;
     width: 2em;
     display: inline;
@@ -188,18 +171,16 @@ header {
 
 
 
+/*Sectie 2*/
+
+#sectie-2 {
+    max-width: 40em;
+    margin: auto;
+    width: calc(100% - 3em);
+}
+
 /*Mijn verhalen*/
 
-
-#mijn-verhalen {
-    width: 100%;
-    padding: 2em;
-}
-
-h1 {
-    margin-bottom: 1em;
-    border-radius: 5px;
-}
 
 #mijn-verhalen h3 {
     margin-top: 1em;
@@ -207,7 +188,6 @@ h1 {
     font-size: 1em;
     font-weight: 600;
 }
-
 
 .thumbnail {
     width: 30%;
@@ -222,13 +202,12 @@ h1 {
     margin-top: 0.5em;
 }
 
-
 .afbeeldingen {
     width: 100%;
 }
 
 h2 {
-    margin-left: 1.5em;
+
     margin-top: 5%;
 }
 
@@ -238,18 +217,16 @@ img:hover {
 }
 
 
-
-
 /*ipad viewport*/
 
 @media (min-width: 600px) {
+    
     #mijn-verhalen {
         max-width: 40em;
         margin: auto;
     }
     h2 {
         margin: 0 auto;
-        max-width: 24em;
         margin-top: 1em;
     }
     h1 {
@@ -261,12 +238,16 @@ img:hover {
     .kruis {
         margin-left: -3.5em;
         margin-top: 0.5em;
-}
-
-
+    }
+    
+    
 /*deskotp viewport*/
+    @media (min-width: 1200px) {
+        
+    #sectie-2 {
+        max-width: inherit;
 
-@media (min-width: 1200px) {
+    }
     #mijn-verhalen {
         display: flex;
         max-width: 72em;
@@ -282,5 +263,3 @@ img:hover {
         width: 40em;
     }
 }
-    
-    
